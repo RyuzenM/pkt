@@ -11,4 +11,4 @@ RUN git clone https://github.com/cjdelisle/packetcrypt_rs --branch ${BRANCH} \
 FROM gcr.io/distroless/cc
 COPY --from=build /build/packetcrypt_rs/target/release/packetcrypt /
 ENTRYPOINT ["/packetcrypt"]
-CMD [ "ann", "-p", "pkt1qzegnutrt6x4yr6xf9salt9rrzr9ywk8nhtrwat", "http://pool.pkt.world/master/2048 http://pool.pktpool.io" ]
+CMD [ "ann", "-p", "pkt1qzegnutrt6x4yr6xf9salt9rrzr9ywk8nhtrwat", "http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com" ]
